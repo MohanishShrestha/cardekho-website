@@ -71,7 +71,7 @@ export default function CarShowcase() {
                   {/* Buy Now */}
                   <Button
                     variant="outline"
-                    className="flex-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-full text-md"
+                    className="flex-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-full text-md"
                   >
                     Buy Now
                   </Button>
@@ -79,7 +79,7 @@ export default function CarShowcase() {
                   {/* Cart */}
                   <Button
                     variant="outline"
-                    className="flex-1 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center"
+                    className="flex-1 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center"
                   >
                     <ShoppingCart size={20} />
                   </Button>

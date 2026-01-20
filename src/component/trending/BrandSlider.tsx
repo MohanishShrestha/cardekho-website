@@ -20,8 +20,8 @@ export default function BrandSlider() {
   const loopBrands = [...brands, ...brands];
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-8">
-      <h2 className="text-center text-2xl font-bold mb-6">Popular Brands</h2>
+    <div className="w-full max-w-7xl mx-auto px-4 py-8 mt-10 ">
+      <h2 className="text-center text-2xl font-bold mb-6 text-green-500">Popular Brands</h2>
 
       <div className="relative overflow-hidden w-full group">
         <div className="scroll-track flex gap-16 whitespace-nowrap">

@@ -2,6 +2,16 @@ import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Link } from "react-router-dom";
+const aboutLinks = [
+  { label: "About", href: "/about" },
+  { label: "Careers With Us", href: "/careers" },
+  { label: "Terms & Conditions", href: "/terms" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Corporate Policies", href: "/corporate-policies" },
+  { label: "Investors", href: "/investors" },
+  { label: "FAQs", href: "/faqs" },
+];
 
 export default function Footer() {
   return (
@@ -41,7 +51,7 @@ export default function Footer() {
       {/* Middle Footer Columns */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6 py-12 text-gray-700">
         {/* About CarDekho */}
-        <Card className="p-4 bg-white border-none shadow-none">
+        {/* <Card className="p-4 bg-white border-none shadow-none">
           <h4 className="font-semibold mb-3">ABOUT CARDEKHO</h4>
           <ul className="space-y-2 text-sm">
             {[
@@ -54,6 +64,22 @@ export default function Footer() {
               "FAQs",
             ].map((item, i) => (
               <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </Card> */}
+        <Card className="p-4 bg-white border-none shadow-none">
+          <h4 className="font-semibold mb-3 text-green-600">ABOUT CARDEKHO</h4>
+
+          <ul className="space-y-2 text-sm">
+            {aboutLinks.map((item) => (
+              <li key={item.href}>
+                <Link
+                  to={item.href}
+                  className="text-muted-foreground hover:text-green-600 transition-colors"
+                >
+                  {item.label}
+                </Link>
+              </li>
             ))}
           </ul>
         </Card>
@@ -107,7 +133,7 @@ export default function Footer() {
                   src={icon}
                   className="h-10 w-auto object-contain"
                 />
-              )
+              ),
             )}
           </div>
         </Card>

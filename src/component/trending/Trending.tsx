@@ -35,7 +35,7 @@ export default function Trending({ title, price, image, showButton }: CarCardPro
 
         {showButton && (
           <div className="px-4 pb-4">
-            <button className="w-full bg-orange-500 text-white text-sm py-2 rounded-xl hover:bg-orange-600 transition">
+            <button className="w-full bg-green-500 text-white text-sm py-2 rounded-xl hover:bg-green-600 transition">
               Pre-Book
             </button>
           </div>

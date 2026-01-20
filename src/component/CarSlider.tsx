@@ -77,7 +77,7 @@ export default function CarSlider() {
         </div>
 
         <div className="flex justify-center md:justify-start">
-          <Button className="mt-6 bg-orange-500 hover:bg-orange-600 items-center text-white w-fit">
+          <Button className="mt-6 bg-green-500 hover:bg-green-600 items-center text-white w-fit">
             For More Information
           </Button>
         </div>

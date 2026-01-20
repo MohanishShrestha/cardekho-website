@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button";
 export default function LoginRegister1() {
   const dispatch = useDispatch<AppDispatch>();
   const { loading, user, error } = useSelector(
-    (state: RootState) => state.auth
+    (state: RootState) => state.auth,
   );
 
   const [isRegister, setIsRegister] = useState(false);
@@ -70,7 +70,7 @@ export default function LoginRegister1() {
     <div className="min-h-screen flex items-center justify-center bg-blue-100 px-4">
       <Card className="w-full max-w-sm shadow-xl rounded-xl border">
         <CardHeader>
-          <CardTitle className="text-2xl font-bold text-center">
+          <CardTitle className="text-2xl font-bold text-center text-green-600">
             {isRegister ? "Register" : "Login"}
           </CardTitle>
         </CardHeader>
@@ -128,13 +128,16 @@ export default function LoginRegister1() {
         <CardFooter className="flex flex-col gap-3">
           {isRegister ? (
             <>
-              <Button className="w-full" onClick={handleRegister}>
+              <Button
+                className="w-full bg-green-500 hover:bg-green-600"
+                onClick={handleRegister}
+              >
                 Register
               </Button>
 
               <Button
                 variant="outline"
-                className="w-full"
+                className="w-full hover:bg-green-50 hover:text-green-600"
                 onClick={() => setIsRegister(false)}
               >
                 Already have an account?
@@ -144,7 +147,7 @@ export default function LoginRegister1() {
             <>
               <Button
                 onClick={handleLogin}
-                className="w-full"
+                className="w-full bg-green-500 hover:bg-green-600"
                 disabled={loading}
               >
                 {loading ? "Logging in..." : "Login"}
@@ -152,7 +155,7 @@ export default function LoginRegister1() {
 
               <Button
                 variant="outline"
-                className="w-full"
+                className="w-full hover:bg-green-50 hover:text-green-600"
                 onClick={() => setIsRegister(true)}
               >
                 Create an Account

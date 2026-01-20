@@ -126,7 +126,7 @@ export default function CarCarousel(): JSX.Element {
                         <div className="mt-4">
                           <Button
                             variant="outline"
-                            className=" text-sm pl-6 pr-6 text-white bg-orange-500 hover:bg-orange-600 border-orange-500 hover:border-orange-600 hover:text-white"
+                            className=" text-sm pl-6 pr-6 text-white bg-green-500 hover:bg-green-600 border-green-500 hover:border-green-600 hover:text-white"
                           >
                             Details
                           </Button>
@@ -165,7 +165,7 @@ export default function CarCarousel(): JSX.Element {
           </div>
 
           <div className="text-center mt-6">
-            <button className="text-orange-500 font-medium flex items-center gap-2 mx-auto hover:underline">
+            <button className="text-green-500 font-medium flex items-center gap-2 mx-auto hover:underline">
               View All Latest Cars →
             </button>
           </div>

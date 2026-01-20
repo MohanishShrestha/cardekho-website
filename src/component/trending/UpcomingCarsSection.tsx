@@ -25,7 +25,7 @@ export default function UpcomingCarsSection() {
       </div>
 
       <div className="text-center mt-6">
-        <button className="text-orange-500 font-medium flex items-center gap-2 mx-auto hover:underline">
+        <button className="text-green-500 font-medium flex items-center gap-2 mx-auto hover:underline">
           View All Upcoming Cars →
         </button>
       </div>

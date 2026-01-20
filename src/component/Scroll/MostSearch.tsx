@@ -33,7 +33,7 @@ export default function MostSearch(): JSX.Element {
       <Card className="w-full shadow-xl border">
         <CardHeader>
           <div className="text-center items-center justify-between">
-            <CardTitle className="text-lg md:text-3xl font-semibold">
+            <CardTitle className="text-lg md:text-3xl font-semibold text-green-500">
               Most searched cars
             </CardTitle>
 
@@ -45,7 +45,7 @@ export default function MostSearch(): JSX.Element {
                   onClick={() => setActiveTab(c)}
                   className={`text-sm pb-2 border-b-2 ${
                     activeTab === c
-                      ? "border-orange-500 text-orange-600 font-semibold"
+                      ? "border-green-500 text-green-600 font-semibold"
                       : "border-transparent text-gray-600"
                   }`}
                 >
@@ -103,7 +103,7 @@ export default function MostSearch(): JSX.Element {
                   </p>
 
                   <div className="px-4 pb-4 mt-4">
-                    <button className="w-full bg-orange-500 text-white text-sm py-2 rounded-xl hover:bg-orange-600 transition">
+                    <button className="w-full bg-green-500 text-white text-sm py-2 rounded-xl hover:bg-green-600 transition">
                       Pre-Book
                     </button>
                   </div>
@@ -114,7 +114,7 @@ export default function MostSearch(): JSX.Element {
         </CardContent>
 
         <div className="text-center mt-6">
-          <button className="text-orange-500 font-medium flex items-center gap-2 mx-auto hover:underline">
+          <button className="text-green-500 font-medium flex items-center gap-2 mx-auto hover:underline">
             View All Upcoming Cars →
           </button>
         </div>
